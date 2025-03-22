@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .instructors-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .instructor-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .instructor-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        .instructor-card h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .instructor-card p {
+            color: #555;
+            font-size: 0.9em;
+        }
+        .view-profile {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .view-profile:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Meet Our Instructors</h1>
+        <p>Learn from the best educators around the globe.</p>
+    </div>
+
+    <div class="instructors-container" id="instructors-container">
+        <!-- Instructor cards will be dynamically added here -->
+    </div>
+
+    <script>
+        // Sample data for 10 instructors
+        const instructors = [
+            {
+                name: "H/MESKEL YIHUN",
+                bio: "Expert in Web Development with over 10 years of experience.",
+                profilePicture: "IMG_20241123_091250_674.jpg",
+                profileLink: "hail.html"
+            },
+            {
+                name: "H/MARIAM AGABZE",
+                bio: "Data Scientist and AI Enthusiast, with a passion for teaching.",
+                profilePicture: "hma.jpg",
+                profileLink: "hma.html"
+            },
+            {
+                name: "Emily Johnson",
+                bio: "Award-winning Graphic Designer and UI/UX Specialist.",
+                profilePicture: "lec2.jpg",
+                profileLink: "lec2.html"
+            },
+            {
+                name: "Michael Brown",
+                bio: "Blockchain Developer and Cryptocurrency Expert.",
+                profilePicture: "lec3.jpg",
+                profileLink: "lec3.html"
+            },
+            {
+                name: "Sarah Davis",
+                bio: "Marketing Strategist with a focus on digital branding.",
+                profilePicture: "lec4.jpg",
+                profileLink: "lec4.html"
+            },
+            {
+                name: "David Wilson",
+                bio: "Cybersecurity Specialist with over 15 years of experience.",
+                profilePicture: "Lec5.jpg",
+                profileLink: "lec5.html"
+            },
+            {
+                name: "Sophia Martinez",
+                bio: "Professional Photographer and Videographer.",
+                profilePicture: "lec6.jpg",
+                profileLink: "lec6.html"
+            },
+            {
+                name: "James Anderson",
+                bio: "Expert in Mobile App Development for Android and iOS.",
+                profilePicture: "lec8.jpg",
+                profileLink: "lec8.html"
+            },
+            {
+                name: "Olivia Thompson",
+                bio: "Nutritionist and Wellness Coach.",
+                profilePicture: "lec7.jpg",
+                profileLink: "lec8.html"
+            },
+        ];
+
+        // Function to render instructors
+        const container = document.getElementById('instructors-container');
+
+        instructors.forEach(instructor => {
+            const card = document.createElement('div');
+            card.className = 'instructor-card';
+
+            card.innerHTML = `
+                <img src="${instructor.profilePicture}" alt="${instructor.name}">
+                <h3>${instructor.name}</h3>
+                <p>${instructor.bio}</p>
+                <a href="${instructor.profileLink}" class="view-profile">View Profile</a>
+            `;
+
+            container.appendChild(card);
+        });
+    </script>
+</body>
+</html>
