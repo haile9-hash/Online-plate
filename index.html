@@ -3,31 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill Labs</title>
+    <meta name="description" content="Skill Labs - Online learning platform with interactive courses and expert instructors">
+    <meta name="keywords" content="online courses, learning platform, skill development, education">
+    <title>Skill Labs - Online Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
- <header class="head">
-    <nav class="main nav">
-    <h1 class="head h1">SKILL LABS</h1>
-        <ul class="nav ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Aboutus.html">About us</a></li>
-            <li><a href="Courses.html">Courses</a></li>
-            <li><a href="Instructors.html">Instructors</a></li>
-            <li><a href="contact us.html">Contact us</a></li>
-        </ul>
-            <a href="signin.html"class="btn">Sign in</a> 
-    </nav>
-</header>
-<div class="big text">
-    <h2>Achive your career goals with <br>
-    Skill labs</h2>
-    <p>Explore interactive courses, engage with expert instructors, and embark <br>
-        on ajourney of learning and discovery. Start your educational adventure <br>
-        today and unlock a world of knowledge at your fingertips. Let's learn to<br>
-        gether, anytime, anywhere!</p>
-</div>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <h1 class="logo">SKILL LABS</h1>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="Aboutus.html" class="nav-link">About us</a></li>
+                <li class="nav-item dropdown">
+                    <a href="Courses.html" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Web Development</a>
+                        <a href="#">Data Science</a>
+                        <a href="#">Graphic Design</a>
+                        <a href="#">Business</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="Instructors.html" class="nav-link">Instructors</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact us</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="signin.html" class="btn btn-outline">Sign in</a>
+                <a href="signup.html" class="btn btn-primary">Sign up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Achieve your career goals with Skill Labs</h1>
+            <p class="hero-text">
+                Explore interactive courses, engage with expert instructors, and embark 
+                on a journey of learning and discovery. Start your educational adventure 
+                today and unlock a world of knowledge at your fingertips. Let's learn 
+                together, anytime, anywhere!
+            </p>
+            <div class="hero-cta">
+                <a href="Courses.html" class="btn btn-primary btn-large">Browse Courses</a>
+                <a href="#how-it-works" class="btn btn-outline btn-large">How It Works</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-image.png" alt="Students learning online" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-header">
+            <h2>Why Choose Skill Labs?</h2>
+            <p>Our platform offers the best learning experience</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-laptop-code feature-icon"></i>
+                <h3>Interactive Learning</h3>
+                <p>Engage with hands-on projects and real-world scenarios.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-chalkboard-teacher feature-icon"></i>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals with years of experience.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-certificate feature-icon"></i>
+                <h3>Certification</h3>
+                <p>Earn recognized certificates upon course completion.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-clock feature-icon"></i>
+                <h3>Flexible Schedule</h3>
+                <p>Learn at your own pace with 24/7 access to materials.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section class="popular-courses">
+        <div class="section-header">
+            <h2>Popular Courses</h2>
+            <a href="Courses.html" class="view-all">View All Courses <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="images/web-dev.jpg" alt="Web Development Course" loading="lazy">
+                <div class="course-info">
+                    <span class="course-category">Development</span>
+                    <h3>Complete Web Development Bootcamp</h3>
+                    <div class="course-meta">
+                        <span><i class="fas fa-star"></i> 4.9 (1.2k)</span>
+                        <span><i class="fas fa-user-graduate"></i> 5.6k students</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="price">$89.99</span>
+                        <a href="#" class="btn btn-small">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more course cards here -->
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest courses and offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Skill Labs</h3>
+                <p>Empowering learners worldwide with quality education.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="Instructors.html">Instructors</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Education St, Learning City</li>
+                    <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                    <li><i class="fas fa-envelope"></i> info@skilllabs.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Skill Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
